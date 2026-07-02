@@ -1,0 +1,34 @@
+---
+import { sobre } from '../data/content';
+---
+<section id="sobre" class="section" aria-labelledby="sobre-title">
+  <div class="container">
+    <p class="section__label">Sobre</p>
+    <h2 id="sobre-title">{sobre.heading}</h2>
+    {sobre.paragraphs.map((p) => <p>{p}</p>)}
+    <ul class="docs">
+      {sobre.docs.map((doc) => (
+        <li>
+          <a class="doc-link" href={doc.href} download>
+            <span aria-hidden="true">📄</span> {doc.label} <span class="doc-ext">(PDF)</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .docs { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 0.6rem; }
+  .doc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    background: var(--surface);
+  }
+  .doc-ext { color: var(--muted); font-size: 0.85em; }
+</style>
