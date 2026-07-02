@@ -1,0 +1,31 @@
+---
+import { local } from '../data/content';
+---
+<section id="local" class="section" aria-labelledby="local-title">
+  <div class="container">
+    <p class="section__label">Local</p>
+    <h2 id="local-title">{local.heading}</h2>
+    <p class="local__venue">{local.venue}</p>
+    <p class="local__address">{local.address}</p>
+    <p class="local__note">{local.note}</p>
+    <div class="map-placeholder" role="img" aria-label="Mapa do local (em breve)">
+      <span aria-hidden="true">🗺️ Mapa em breve</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .local__venue { font-weight: 700; margin: 1rem 0 0.15rem; }
+  .local__address { margin: 0 0 0.5rem; }
+  .local__note { color: var(--muted); margin: 0 0 1.25rem; }
+  .map-placeholder {
+    height: 220px;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+  }
+</style>
