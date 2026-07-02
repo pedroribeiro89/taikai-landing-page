@@ -1,0 +1,31 @@
+---
+import { footer } from '../data/content';
+---
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__org">{footer.org}</p>
+    <p><a href={`mailto:${footer.contact}`}>{footer.contact}</a></p>
+    <ul class="socials">
+      {footer.socials.map((s) => (
+        <li><a href={s.href}>{s.label}</a></li>
+      ))}
+    </ul>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding-block: 32px;
+  }
+  .site-footer a { color: var(--footer-text); }
+  .site-footer__org { font-weight: 700; margin: 0 0 0.25rem; }
+  .socials {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    gap: 1rem;
+  }
+</style>
