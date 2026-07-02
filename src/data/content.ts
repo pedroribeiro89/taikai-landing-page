@@ -5,6 +5,10 @@ export const site = {
   url: 'https://kendo-bh.netlify.app',
   locationName: 'Belo Horizonte',
   region: 'Minas Gerais',
+  // Placeholder dates (ISO 8601) — required for valid Event structured data.
+  // Update these once the real championship dates are confirmed.
+  startDate: '2026-12-05',
+  endDate: '2026-12-06',
 };
 
 export const hero = {
