@@ -16,3 +16,6 @@ dist/
 # logs
 npm-debug.log*
 pnpm-debug.log*
+
+# brainstorming visual companion
+.superpowers/
