@@ -1,0 +1,46 @@
+---
+import { senseis } from '../data/content';
+---
+<section id="senseis" class="section" aria-labelledby="senseis-title">
+  <div class="container">
+    <p class="section__label">Equipe</p>
+    <h2 id="senseis-title">{senseis.heading}</h2>
+    <ul class="senseis">
+      {senseis.items.map((s) => (
+        <li class="sensei">
+          <div class="sensei__avatar" aria-hidden="true"></div>
+          <h3 class="sensei__name">{s.name}</h3>
+          <p class="sensei__rank">{s.rank}</p>
+          <p class="sensei__bio">{s.bio}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .senseis {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 560px) {
+    .senseis { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .senseis { grid-template-columns: repeat(4, 1fr); }
+  }
+  .sensei__avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .sensei__name { font-size: 1.05rem; margin: 0.75rem 0 0.15rem; }
+  .sensei__rank { color: var(--accent); font-weight: 700; font-size: 0.85rem; margin: 0 0 0.5rem; }
+  .sensei__bio { color: var(--muted); font-size: 0.92rem; margin: 0; }
+</style>
