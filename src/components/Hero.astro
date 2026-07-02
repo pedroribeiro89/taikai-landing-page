@@ -22,13 +22,16 @@ import { hero } from '../data/content';
   .hero__kanji {
     position: absolute;
     top: 50%;
-    right: -0.15em;
+    right: 0.1em;
     transform: translateY(-50%);
     writing-mode: vertical-rl;
     font-family: 'Space Grotesk', system-ui, sans-serif;
     font-weight: 700;
-    font-size: clamp(9rem, 40vw, 20rem);
-    line-height: 0.8;
+    font-size: clamp(5rem, 22vw, 11rem);
+    /* letter-spacing runs along the vertical inline axis, so it separates the
+       two stacked kanji (剣 / 道) from each other. */
+    letter-spacing: 0.22em;
+    line-height: 1;
     color: var(--text);
     opacity: 0.09;
     pointer-events: none;
