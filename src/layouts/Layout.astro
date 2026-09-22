@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { site } from '../data/content';
+import { site, local } from '../data/content';
 
 interface Props {
   title?: string;
@@ -24,9 +24,10 @@ const eventJsonLd = {
   image: ogImage,
   location: {
     '@type': 'Place',
-    name: site.locationName,
+    name: local.venue,
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Av. Mal. Esperidião Rosa, 400',
       addressLocality: site.locationName,
       addressRegion: site.region,
       addressCountry: 'BR',
@@ -36,14 +37,14 @@ const eventJsonLd = {
 ---
 
 <!doctype html>
-<html lang="pt-BR" data-theme="red">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <meta name="theme-color" content="#c1121f" />
+    <meta name="theme-color" content="#141414" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Open Graph -->
@@ -72,19 +73,6 @@ const eventJsonLd = {
       type="font/woff2"
       crossorigin
     />
-
-    <!-- Set theme before paint (no FOUC). Default red; persisted in localStorage. -->
-    <script is:inline>
-      (function () {
-        try {
-          var t = localStorage.getItem('theme');
-          if (t !== 'red' && t !== 'white' && t !== 'black') t = 'red';
-          document.documentElement.setAttribute('data-theme', t);
-        } catch (e) {
-          document.documentElement.setAttribute('data-theme', 'red');
-        }
-      })();
-    </script>
 
     <script type="application/ld+json" set:html={JSON.stringify(eventJsonLd)} />
   </head>

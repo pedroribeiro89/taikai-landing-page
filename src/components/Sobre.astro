@@ -6,6 +6,19 @@ import { sobre } from '../data/content';
     <p class="section__label">Sobre</p>
     <h2 id="sobre-title">{sobre.heading}</h2>
     {sobre.paragraphs.map((p) => <p>{p}</p>)}
+
+    <h3 class="schedule__title">Programação</h3>
+    <ul class="schedule">
+      {sobre.schedule.map((day) => (
+        <li class="schedule__day">
+          <p class="schedule__date">{day.date}</p>
+          <ul class="schedule__activities">
+            {day.activities.map((a) => <li>{a}</li>)}
+          </ul>
+        </li>
+      ))}
+    </ul>
+
     <ul class="docs">
       {sobre.docs.map((doc) => (
         <li>
@@ -19,7 +32,34 @@ import { sobre } from '../data/content';
 </section>
 
 <style>
-  .docs { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 0.6rem; }
+  .schedule__title {
+    font-size: 1.15rem;
+    margin: 1.75rem 0 0.75rem;
+  }
+  .schedule {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+  .schedule__day {
+    border-left: 2px solid var(--accent-text);
+    padding-left: 0.9rem;
+  }
+  .schedule__date {
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+  }
+  .schedule__activities {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0;
+    color: var(--muted);
+  }
+  .schedule__activities li { margin: 0.15rem 0; }
+
+  .docs { list-style: none; padding: 0; margin: 1.75rem 0 0; display: grid; gap: 0.6rem; }
   .doc-link {
     display: inline-flex;
     align-items: center;

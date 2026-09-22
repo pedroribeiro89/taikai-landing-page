@@ -7,7 +7,9 @@ import { footer } from '../data/content';
     <p><a href={`mailto:${footer.contact}`}>{footer.contact}</a></p>
     <ul class="socials">
       {footer.socials.map((s) => (
-        <li><a href={s.href}>{s.label}</a></li>
+        <li>
+          <a href={s.href} target="_blank" rel="noopener noreferrer">{s.label}</a>
+        </li>
       ))}
     </ul>
   </div>

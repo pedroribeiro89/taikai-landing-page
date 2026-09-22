@@ -8,46 +8,7 @@
 }
 
 /* ---------- Theme tokens ---------- */
-/*
- * Two accent tokens keep contrast WCAG-AA in every theme:
- *   --accent       : accent used as a FILL / background (decorative).
- *   --accent-text  : accent-colored TEXT drawn on --bg (labels, links, focus).
- *   --on-accent    : text/foreground drawn ON an --accent fill.
- * In the red theme the near-black accent fails as text on red (2.96:1), so
- * --accent-text resolves to white there; the fill stays near-black.
- */
-:root,
-:root[data-theme='red'] {
-  --bg: #c1121f;
-  --text: #ffffff;
-  --accent: #141414;
-  --accent-text: #ffffff;
-  --on-accent: #ffffff;
-  --muted: rgba(255, 255, 255, 0.9);
-  --surface: rgba(255, 255, 255, 0.08);
-  --border: rgba(255, 255, 255, 0.28);
-  --btn-bg: #141414;
-  --btn-text: #ffffff;
-  --footer-bg: #141414;
-  --footer-text: #dddddd;
-}
-
-:root[data-theme='white'] {
-  --bg: #faf9f7;
-  --text: #141414;
-  --accent: #c1121f;
-  --accent-text: #c1121f;
-  --on-accent: #ffffff;
-  --muted: rgba(20, 20, 20, 0.65);
-  --surface: rgba(0, 0, 0, 0.04);
-  --border: rgba(0, 0, 0, 0.14);
-  --btn-bg: #c1121f;
-  --btn-text: #ffffff;
-  --footer-bg: #141414;
-  --footer-text: #dddddd;
-}
-
-:root[data-theme='black'] {
+:root {
   --bg: #141414;
   --text: #f5f5f5;
   --accent: #ff4d4d;

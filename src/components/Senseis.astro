@@ -8,10 +8,18 @@ import { senseis } from '../data/content';
     <ul class="senseis">
       {senseis.items.map((s) => (
         <li class="sensei">
-          <div class="sensei__avatar" aria-hidden="true"></div>
+          <div class="sensei__flag-wrap">
+            <img
+              class="sensei__flag"
+              src={s.flag}
+              alt={`Bandeira de ${s.origin}`}
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
           <h3 class="sensei__name">{s.name}</h3>
           <p class="sensei__rank">{s.rank}</p>
-          <p class="sensei__bio">{s.bio}</p>
+          <p class="sensei__origin">{s.origin}</p>
         </li>
       ))}
     </ul>
@@ -31,16 +39,23 @@ import { senseis } from '../data/content';
     .senseis { grid-template-columns: repeat(2, 1fr); }
   }
   @media (min-width: 900px) {
-    .senseis { grid-template-columns: repeat(4, 1fr); }
+    .senseis { grid-template-columns: repeat(5, 1fr); }
   }
-  .sensei__avatar {
+  .sensei__flag-wrap {
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    background: var(--surface);
+    background: #ffffff;
     border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .sensei__flag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .sensei__name { font-size: 1.05rem; margin: 0.75rem 0 0.15rem; }
-  .sensei__rank { color: var(--accent-text); font-weight: 700; font-size: 0.85rem; margin: 0 0 0.5rem; }
-  .sensei__bio { color: var(--muted); font-size: 0.92rem; margin: 0; }
+  .sensei__rank { color: var(--accent-text); font-weight: 700; font-size: 0.85rem; margin: 0 0 0.25rem; }
+  .sensei__origin { color: var(--muted); font-size: 0.9rem; margin: 0; }
 </style>
