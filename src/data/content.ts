@@ -59,7 +59,9 @@ export const senseis = {
     { name: 'Adrian Yoneda',    rank: '7º Dan Kyoshi',  origin: 'São Paulo',        flag: '/flags/sao-paulo.svg' },
     { name: 'Márcio Felisardo', rank: '6º Dan Renshi',  origin: 'Rio de Janeiro',   flag: '/flags/rio-de-janeiro.svg' },
     { name: 'Gustavo Takano',   rank: '6º Dan Renshi',  origin: 'Distrito Federal', flag: '/flags/distrito-federal.svg' },
+    { name: 'Thierry Antoine',  rank: '5º Dan',         origin: 'Bélgica',          flag: '/flags/belgica.svg' },
     { name: 'Leonardo Sato',    rank: '5º Dan',         origin: 'Rio de Janeiro',   flag: '/flags/rio-de-janeiro.svg' },
+    { name: 'Patrick Bonaly',   rank: '5º Dan',         origin: 'Rio de Janeiro',   flag: '/flags/rio-de-janeiro.svg' },
   ],
 };
 
