@@ -46,8 +46,8 @@ export const sobre = {
     },
   ],
   docs: [
-    { label: 'Info do torneio', href: '/docs/info-campeonato.pdf' },
-    { label: 'Info de exames', href: '/docs/info-exames.pdf' },
+    // { label: 'Info do torneio', href: '/docs/info-campeonato.pdf' },
+    // { label: 'Info de exames', href: '/docs/info-exames.pdf' },
     { label: 'Carta-convite', href: '/docs/carta-convite.pdf' },
   ],
 };
@@ -67,23 +67,23 @@ export const senseis = {
 
 export const local = {
   heading: 'Local · Como chegar',
-  venue: 'Quadra poliesportiva do Colégio Militar de Belo Horizonte',
-  address: 'Av. Mal. Esperidião Rosa, 400 — São Francisco, Belo Horizonte / MG',
+  venue: 'Quadra do Coleguium Santa Amélia',
+  address: 'Rua das Canárias, 2171 — Santa Branca, Belo Horizonte / MG',
   mapUrl:
-    'https://www.google.com/maps/search/?api=1&query=Col%C3%A9gio+Militar+de+Belo+Horizonte',
+    'https://maps.app.goo.gl/B8ZJh3MdiCbiCL8c7',
   embedUrl:
-    'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10040.47352080404!2d-43.96092708301663!3d-19.87179684572131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6908bdd49300b%3A0x960cd350466db7ff!2sCol%C3%A9gio%20Militar%20de%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1790094499787!5m2!1spt-BR!2sbr',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11596.675722972259!2d-43.98390687697783!3d-19.848225970285103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69037fefe5221%3A0x3bc70c1fff9d1334!2sColeguium%20-%20Santa%20Am%C3%A9lia!5e0!3m2!1spt-BR!2sbr!4v1793123573681!5m2!1spt-BR!2sbr',
 };
 
 export const hospedagem = {
   heading: 'Hospedagem',
   intro: 'Sugestões de hotéis próximos ao local do torneio.',
   items: [
-    { name: 'Bristol Jaraguá',           note: 'Bairro Jaraguá',    href: 'https://www.booking.com/Share-C20iMji' },
-    { name: 'Allia Gran Pampulha Suítes', note: 'Região da Pampulha', href: 'https://www.booking.com/Share-8PqCrX' },
-    { name: 'Ibis Styles BH Pampulha',    note: 'Região da Pampulha', href: 'https://www.booking.com/Share-q712Gc' },
-    { name: 'Soft Inn Belo Horizonte',    note: 'Belo Horizonte',    href: 'https://www.booking.com/Share-Wn4D8G' },
-    { name: 'Quality Pampulha',           note: 'Região da Pampulha', href: 'https://www.booking.com/Share-fqITRd' },
+    { name: 'Pampulha Design Hotel', note: 'Região da Pampulha', href: 'https://www.booking.com/Share-r1pu7t' },
+    { name: 'Pousada Lagoa', note: 'Bairro Jardim Atlântico', href: 'https://www.booking.com/Share-zYZwoOH' },
+    { name: 'Rede Andrade Pampulha', note: 'Região da Pampulha', href: 'https://www.booking.com/Share-5xkZFg' },
+    { name: 'VIA SPE - Pousada', note: 'Bairro Jardim Atlântico', href: 'https://www.booking.com/Share-LehXjk' },
+    { name: 'Itapoa Executive Hotel', note: 'Bairro Itapoã', href: 'https://www.booking.com/Share-BKwGZO' },
   ],
 };
 

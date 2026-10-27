@@ -19,3 +19,5 @@ pnpm-debug.log*
 
 # brainstorming visual companion
 .superpowers/
+
+.idea/
