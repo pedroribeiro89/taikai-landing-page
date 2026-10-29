@@ -46,8 +46,6 @@ export const sobre = {
     },
   ],
   docs: [
-    // { label: 'Info do torneio', href: '/docs/info-campeonato.pdf' },
-    // { label: 'Info de exames', href: '/docs/info-exames.pdf' },
     { label: 'Carta-convite', href: '/docs/carta-convite.pdf' },
   ],
 };
@@ -57,6 +55,8 @@ export const senseis = {
   items: [
     { name: 'Yosuke Kataoka',   rank: '7º Dan Kyoshi',  origin: 'Japão',            flag: '/flags/japao.svg' },
     { name: 'Adrian Yoneda',    rank: '7º Dan Kyoshi',  origin: 'São Paulo',        flag: '/flags/sao-paulo.svg' },
+    // { name: 'André Queiroz',    rank: '6º Dan Renshi',  origin: 'Rio de Janeiro',   flag: '/flags/rio-de-janeiro.svg' },
+    { name: 'Satoshi Ueda',     rank: '6º Dan Renshi',  origin: 'Japão',            flag: '/flags/japao.svg' },
     { name: 'Márcio Felisardo', rank: '6º Dan Renshi',  origin: 'Rio de Janeiro',   flag: '/flags/rio-de-janeiro.svg' },
     { name: 'Gustavo Takano',   rank: '6º Dan Renshi',  origin: 'Distrito Federal', flag: '/flags/distrito-federal.svg' },
     { name: 'Thierry Antoine',  rank: '5º Dan',         origin: 'Bélgica',          flag: '/flags/belgica.svg' },
